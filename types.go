@@ -59,3 +59,8 @@ func (t Time) Time() time.Time {
 func (t Time) String() string {
 	return t.Time().String()
 }
+
+// Format returns t as a formatted string
+func (t Time) Format(f string) string {
+	return t.Time().Format(f)
+}
